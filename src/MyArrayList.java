@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
-public class MyArrayList extends ArrayList {
+public class MyArrayList<T> extends ArrayList {
     @Override
-    public Object remove(int index) {
+    public T remove(int index) {
         throw new FunctionDisabled();
     }
 
